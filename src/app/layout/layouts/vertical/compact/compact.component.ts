@@ -5,10 +5,12 @@ import { MsrMediaWatcherService } from '@msr/services/media-watcher';
 import { MsrNavigationService, MsrVerticalNavigationComponent } from '@msr/components/navigation';
 import { Navigation } from 'app/core/navigation/navigation.types';
 import { NavigationService } from 'app/core/navigation/navigation.service';
+import { style } from '@angular/animations';
 
 @Component({
     selector     : 'compact-layout',
     templateUrl  : './compact.component.html',
+    styleUrls    : ['./compact.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
 export class CompactLayoutComponent implements OnInit, OnDestroy

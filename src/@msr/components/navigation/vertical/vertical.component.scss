@@ -2,3 +2,8 @@
 @use 'styles/appearances/compact';
 @use 'styles/appearances/dense';
 @use 'styles/appearances/thin';
+
+.vertical-left-menu {
+    width: 8rem !important;
+    background-color: black !important;
+}

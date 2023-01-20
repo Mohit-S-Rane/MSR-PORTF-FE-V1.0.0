@@ -17,6 +17,13 @@ export const compactNavigation: MsrNavigationItem[] = [
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
         link : '/example'
+    },
+    {
+        id   : 'about',
+        title: 'About',
+        type : 'basic',
+        icon : 'heroicons_outline:chart-pie',
+        link : '/example'
     }
 ];
 export const futuristicNavigation: MsrNavigationItem[] = [
