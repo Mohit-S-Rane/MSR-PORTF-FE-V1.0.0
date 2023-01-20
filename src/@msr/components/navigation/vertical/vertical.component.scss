@@ -11,3 +11,12 @@
 .social-media-btn {
     color: #08FDD8 !important;
 }
+
+@font-face {
+    font-family: coolvetica;
+    src: url(../../../../assets/fonts/coolvetica/coolvetica.rg-regular.otf) format("opentype");
+}
+
+.my-font {
+    font-family: coolvetica;
+}
