@@ -9,6 +9,7 @@ import { MsrUtilsService } from '@msr/services/utils/utils.service';
 @Component({
     selector       : 'msr-vertical-navigation-basic-item',
     templateUrl    : './basic.component.html',
+    styleUrls      : ['./basic.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MsrVerticalNavigationBasicItemComponent implements OnInit, OnDestroy

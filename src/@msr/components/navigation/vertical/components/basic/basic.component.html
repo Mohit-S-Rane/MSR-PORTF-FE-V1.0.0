@@ -7,7 +7,7 @@
     <!-- Item with an internal link -->
     <ng-container *ngIf="item.link && !item.externalLink && !item.function && !item.disabled">
         <a
-            class="msr-vertical-navigation-item"
+            class="msr-vertical-navigation-item bt-hover"
             [ngClass]="{'msr-vertical-navigation-item-active-forced': item.active}"
             [routerLink]="[item.link]"
             [fragment]="item.fragment ?? null"
@@ -98,16 +98,16 @@
 <ng-template #itemTemplate>
 
     <!-- Icon -->
-    <ng-container *ngIf="item.icon">
+    <!-- <ng-container *ngIf="item.icon">
         <mat-icon
             class="msr-vertical-navigation-item-icon"
             [ngClass]="item.classes?.icon"
             [svgIcon]="item.icon"></mat-icon>
-    </ng-container>
+    </ng-container> -->
 
     <!-- Title & Subtitle -->
-    <div class="msr-vertical-navigation-item-title-wrapper">
-        <div class="msr-vertical-navigation-item-title">
+    <div class="msr-vertical-navigation-item-title-wrapper mt-0">
+        <div class="msr-vertical-navigation-item-title title-text">
             <span [ngClass]="item.classes?.title">
                 {{item.title}}
             </span>
