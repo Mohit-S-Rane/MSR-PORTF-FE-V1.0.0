@@ -33,7 +33,7 @@ body msr-splash-screen .spinner {
 body msr-splash-screen .spinner > div {
     width: 12px;
     height: 12px;
-    background-color: #1E96F7;
+    background-color: #05fdd8;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: msr-bouncedelay 1s infinite ease-in-out both;
