@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
 import { ExampleComponent } from 'app/modules/admin/example/example.component';
+import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 
 const exampleRoutes: Route[] = [
     {
@@ -14,7 +15,8 @@ const exampleRoutes: Route[] = [
         ExampleComponent
     ],
     imports     : [
-        RouterModule.forChild(exampleRoutes)
+        RouterModule.forChild(exampleRoutes),
+        AngularTypewriterEffectModule
     ]
 })
 export class ExampleModule

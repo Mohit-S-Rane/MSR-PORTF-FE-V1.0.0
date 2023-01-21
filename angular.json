@@ -59,9 +59,7 @@
                             "src/styles/styles.scss",
                             "src/styles/tailwind.scss"
                         ],
-                        "scripts": [
-                            "src/assets/js/typing-effect.js"
-                        ]
+                        "scripts": []
                     },
                     "configurations": {
                         "production": {
