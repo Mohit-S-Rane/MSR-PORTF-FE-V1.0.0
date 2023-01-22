@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@font-face {
+    font-family: coolvetica;
+    src: url(../../../../assets/fonts/coolvetica/coolvetica.rg-regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: La_Belle_Aurore;
+    src: url(../../../../assets/fonts/La_Belle_Aurore/LaBelleAurore-Regular.ttf) format("opentype");
+}
+
+.title-font {
+    font-family: coolvetica;
+}
+
+.font-tags {
+    color: #515152;
+    font-style: italic;
+    font-size: 1.6rem;
+    font-family: "La_Belle_Aurore", cursive;
+}
+
+.text-effect {
+    color: #05fdd8;
+  }

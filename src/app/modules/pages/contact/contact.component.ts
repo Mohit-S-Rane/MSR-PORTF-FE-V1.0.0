@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { UntypedFormGroup } from "@angular/forms";
 
 @Component({
   selector: "contact",
@@ -7,5 +8,10 @@ import { Component, OnInit, ViewEncapsulation } from "@angular/core";
   encapsulation: ViewEncapsulation.None,
 })
 export class ContactComponent {
+  signInForm: UntypedFormGroup;
+
   constructor() {}
+
+  signIn(): void
+  {}
 }
