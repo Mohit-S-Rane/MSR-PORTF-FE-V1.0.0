@@ -82,6 +82,7 @@ const config = {
             '6xl' : '2.5rem',
             '7xl' : '3rem',
             '8xl' : '4rem',
+            '8.5xl' : '5rem',
             '9xl' : '6rem',
             '10xl': '8rem'
         },

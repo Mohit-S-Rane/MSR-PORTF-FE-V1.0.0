@@ -12,12 +12,8 @@
     format("opentype");
 }
 
-.only-font {
+.title-font {
   font-family: coolvetica;
-}
-
-.my-font {
-  font-size: 7vw;
 }
 
 .tags {
@@ -200,6 +196,6 @@ $borderW: 2px;
   
 }
 
-.letter-effect:hover {
+.hover-effect:hover {
   color: #05fdd8;
 }
