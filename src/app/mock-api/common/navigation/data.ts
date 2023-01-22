@@ -16,35 +16,35 @@ export const compactNavigation: MsrNavigationItem[] = [
         title: 'About',
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
-        link : '/example'
+        link : '/about'
     },
     {
         id   : 'my_skills',
         title: 'My Skills',
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
-        link : '/example'
+        link : '/skills'
     },
     {
         id   : 'work',
         title: 'Work',
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
-        link : '/example'
+        link : '/work'
     },
     {
         id   : 'contact',
         title: 'Contact',
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
-        link : '/example'
+        link : '/contact'
     },
     {
         id   : 'Blog',
         title: 'Blog',
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
-        link : '/example'
+        link : '/wall'
     },        
 ];
 export const futuristicNavigation: MsrNavigationItem[] = [
