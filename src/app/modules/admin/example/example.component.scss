@@ -197,7 +197,7 @@ $borderW: 2px;
 }
 
 /* Config */
-$color-bg: #1e1e1e;
+$color-bg: red;
 $color-particle: #fff;
 $spacing: 2560px;
 $time-1: 60s;
@@ -231,6 +231,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  // background-color: #0f172a;
 }
 
 .page-bg {
