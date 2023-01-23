@@ -23,4 +23,22 @@
 
 .text-effect {
     color: #05fdd8;
-  }
+}
+
+* {
+    margin: 0;
+}
+
+#myCanvasContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+canvas {
+    width: 90vh;
+    height: 90vh;
+}
