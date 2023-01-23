@@ -1,40 +1,114 @@
-<div class="flex flex-col flex-auto min-w-0">
+<div class="flex flex-col min-w-0">
 
-    <!-- Main -->
-    <div class="flex-auto p-6 sm:p-10">
+    <div class="flex flex-col p-6 sm:p-10 gap-x-4">
+        <div class="font-tags text-3xl">&lt;html&gt;</div>
+        <div class="font-tags text-3xl">&lt;body&gt;</div>
 
-        <!-- CONTENT GOES HERE -->
-        <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
-            <div class="flex flex-col">
-                <!-- <span class="font-tags">&lt;html&gt;</span> -->
-                <div class="font-tags">&lt;html&gt;</div>
-                <div class="font-tags ml-5">&lt;body&gt;</div>
-                <div class="font-tags ml-5">&lt;h1&gt;</div>
-                <h2 class="title-font ml-12 text-7xl md:text-8.5xl lg:text-8.5xl text-effect"
-                    style="line-height: 5rem;">
-                    Skills & <br> Experience
-                </h2>
-                <div class="font-tags ml-5 inline">&lt;/h1&gt;</div>
-                <div class="font-tags ml-5">&lt;p&gt;</div>
-                <div class="ml-12 text-lg">
-                    <p>Since beginning my journey as a freelance developer nearly 10 years ago, I’ve done remote work
-                        for agencies, consulted for startups, and collaborated with talented people to create web
-                        products for both business and consumer use.</p>
-                    <br>
-                    <p>I create successful responsive websites that are fast, easy to use, and built with best
-                        practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small
-                        and medium web apps, custom plugins, features, animations, and coding interactive layouts.</p>
-                    <br>
-                    <p>I also have full-stack developer experience with popular open-source CMS like (WordPress, Drupal,
-                        Magento, Keystone.js and others) .</p>
-                    <br>
-                    <p>Visit my<a class="text-effect" href="/contact"> LinkedIn </a>profile for more details or just<a
-                            class="text-effect" href="/contact"> contact</a> me.</p>
+        <div class="sm:flex sm:flex-row sm:gap-x-6">
+            <div class="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
+                <div class="flex flex-col">
+                    <div class="font-tags text-3xl sm:ml-5">&lt;h1&gt;</div>
+                    <h2 class="title-font ml-5 sm:ml-12 text-7xl md:text-8.5xl lg:text-8.5xl text-effect leading-none">
+                        <span>Skills &</span>  <br> <span>Experience</span>
+                    </h2>
+                    <div class="font-tags text-3xl sm:ml-5 inline">&lt;/h1&gt;</div>
+                    <div class="font-tags text-3xl sm:ml-5">&lt;p&gt;</div>
+                    <div class="ml-5 sm:ml-12 text-lg">
+                        <p>Since beginning my journey as a freelance developer nearly 10 years ago, I’ve done remote
+                            work
+                            for agencies, consulted for startups, and collaborated with talented people to create web
+                            products for both business and consumer use.</p>
+                        <br>
+                        <p>I create successful responsive websites that are fast, easy to use, and built with best
+                            practices. The main area of my expertise is front-end development, HTML, CSS, JS, building
+                            small
+                            and medium web apps, custom plugins, features, animations, and coding interactive layouts.
+                        </p>
+                        <br>
+                        <p>I also have full-stack developer experience with popular open-source CMS like (WordPress,
+                            Drupal,
+                            Magento, Keystone.js and others) .</p>
+                        <br>
+                        <p>Visit my<a class="text-effect" href="/contact"> LinkedIn </a>profile for more details or
+                            just<a class="text-effect" href="/contact"> contact</a> me.</p>
+                    </div>
+                    <div class="font-tags text-3xl sm:ml-5">&lt;/p&gt;</div>
                 </div>
-                <div class="font-tags ml-5">&lt;/p&gt;</div>
-                <div class="font-tags ml-5">&lt;/body&gt;</div>
-                <div class="font-tags">&lt;/html&gt;</div>
+            </div>
+            <div class="flex flex-col md:w-1/2">
+                <div class="w-full">
+                    <div class="flex flex-col w-11/12 m-auto">
+                        <div class="flex items-center mt-4">
+                            <div class="flex-auto leading-none">
+                                <div class="text-2xl text-2x1 title-font">Front-end</div>
+                                <mat-progress-bar class="mt-3 rounded-full text-lime-500" [color]="'warn'"
+                                    [mode]="'determinate'" [value]="75"></mat-progress-bar>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-6">
+                            <div class="flex-auto leading-none">
+                                <div class="text-2xl text-2x1 title-font">Back-end</div>
+                                <mat-progress-bar class="mt-3 rounded-full text-lime-500" [color]="'primary'"
+                                    [mode]="'determinate'" [value]="75"></mat-progress-bar>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-6">
+                            <div class="flex-auto leading-none">
+                                <div class="text-2xl text-2x1 title-font">Angular</div>
+                                <mat-progress-bar class="mt-3 rounded-full text-lime-500" [color]="'warn'"
+                                    [mode]="'determinate'" [value]="75"></mat-progress-bar>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-6">
+                            <div class="flex-auto leading-none">
+                                <div class="text-2xl text-2x1 title-font">Devops</div>
+                                <mat-progress-bar class="mt-3 rounded-full text-lime-500" [color]="'primary'"
+                                    [mode]="'determinate'" [value]="75"></mat-progress-bar>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mt-12 flex flex-col gap-y-6">
+                    <msr-card class="flex flex-col w-11/12 m-auto" [flippable]="true" #msrCard>
+                        <ng-container msrCardFront>
+                            <div class="flex flex-col basis-11/12 px-8 py-6 pb-6">
+                                <div class="text-2xl font-bold title-font tracking-widest "> Full Stack Developer | AWS
+                                    Devops </div>
+                                <div class="text-xl mt-3">
+                                    ABC Ltd.
+                                    <br>
+                                    <span class="text-lg">2021-2023</span>
+                                </div>
+                                <div class="mt-2 text-lg">
+                                    Creative brand, website design and development studio that can bring your online
+                                    business
+                                    dreams to life
+                                </div>
+                            </div>
+                        </ng-container>
+                    </msr-card>
+                    <msr-card class="flex flex-col w-11/12 m-auto" [flippable]="true" #msrCard>
+                        <ng-container msrCardFront>
+                            <div class="flex flex-col px-8 py-6 pb-6">
+                                <div class="text-2xl font-bold title-font tracking-widest "> SAP ABAP </div>
+                                <div class="text-xl mt-3">
+                                    ABC Ltd.
+                                    <br>
+                                    <span class="text-lg">2021-2021</span>
+                                </div>
+                                <div class="mt-2 text-lg">
+                                    Creative brand, website design and development studio that can bring your online
+                                    business
+                                    dreams to life
+                                </div>
+                            </div>
+                        </ng-container>
+                    </msr-card>
+                </div>
             </div>
         </div>
 
+
+        <div class="font-tags text-3xl mt-8">&lt;/body&gt;</div>
+        <div class="font-tags text-3xl">&lt;/html&gt;</div>
     </div>
