@@ -17,7 +17,6 @@
 .font-tags {
     color: #515152;
     font-style: italic;
-    font-size: 1.6rem;
     font-family: "La_Belle_Aurore", cursive;
 }
 
@@ -25,20 +24,15 @@
     color: #05fdd8;
 }
 
-* {
-    margin: 0;
-}
+$color_1: #36454F;
+$font-family_1: 'Poppins', sans-serif;
 
-#myCanvasContainer {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+.tagcloud {
+	font-family: $font-family_1;
+	font-size: 20px;
 }
-
-canvas {
-    width: 90vh;
-    height: 90vh;
+.tagcloud--item {
+	&:hover {
+		color: $color_1;
+	}
 }
