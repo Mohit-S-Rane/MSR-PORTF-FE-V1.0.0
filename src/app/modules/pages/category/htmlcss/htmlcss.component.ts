@@ -1,12 +1,12 @@
 import { Component, HostListener, OnInit, SimpleChanges, ViewEncapsulation } from "@angular/core";
 
 @Component({
-  selector: "category",
-  templateUrl: "./category.component.html",
-  styleUrls: ["./category.component.scss"],
+  selector: "html-css-category",
+  templateUrl: "./htmlcss.component.html",
+  styleUrls: ["./htmlcss.component.scss"],
   encapsulation: ViewEncapsulation.None,
 })
-export class CategoryComponent {
+export class HtmlCssCategoryComponent {
 
   constructor() {}
 

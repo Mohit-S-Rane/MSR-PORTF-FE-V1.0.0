@@ -1,19 +1,22 @@
-<div class="flex flex-col sm:flex sm:flex-row p-6 min-w-0">
-    <!-- <div class="flex-1 flex-row flex-wrap gap-x-6 gap-y-6 justify-center"> -->
+<div class="flex flex-col sm:flex sm:flex-row p-6 min-w-0 gap-x-6">
     <msr-card
-        class="w-72 flex flex-col p-7 sm:ml-4 mt-4 rounded-none filter-pricing sm:justify-start justify-center m-auto"
-        style="background-color: #0f172a;">
+        class="invisible hidden sm:visible sm:block flex flex-col py-7 sm:ml-4 mt-4 rounded-none filter-pricing sm:justify-start justify-center m-auto"
+        style="background-color: #0f172a; min-width: 20rem;">
         <div class="text-5xl title-font leading-5">categories</div>
         <div class="flex flex-col mt-8">
-            <a href="#">
+            <a href="/category/computer-science">
                 <div class="text-xl text-secondary text-effect font-semibold inline">Computer Science </div><span
                     class="text-xl text-secondary font-semibold">(11)</span>
             </a>
-            <a href="">
+            <a href="/category/htmlcss">
+                <div class="text-xl text-secondary text-effect font-semibold inline">HTML & CSS </div><span
+                    class="text-xl text-secondary font-semibold">(11)</span>
+            </a>
+            <a href="/category/javascript">
                 <div class="text-xl text-secondary text-effect font-semibold inline">JavaScript </div><span
                     class="text-xl text-secondary font-semibold">(7)</span>
             </a>
-            <a href="">
+            <a href="/category/other">
                 <div class="text-xl text-secondary text-effect font-semibold inline">Web Development </div><span
                     class="text-xl text-secondary font-semibold">(8)</span>
             </a>
@@ -45,7 +48,6 @@
             <div class="font-tags text-lg">&lt;/form&gt;</div>
         </form>
     </msr-card>
-    <!-- </div> -->
 
     <div class="w-16 absolute top-0 left-0 bg-black p-2.5">
         <a href="/example">
@@ -155,8 +157,4 @@
             </div>
         </msr-card>
     </div>
-
-
-
-
 </div>
