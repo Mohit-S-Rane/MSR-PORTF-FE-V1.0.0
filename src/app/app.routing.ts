@@ -61,6 +61,10 @@ export const appRoutes: Route[] = [
         },
         children   : [
             {path: 'home', loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)},
+            {path: 'wall', loadChildren: () => import('app/modules/pages/wall/wall.module').then(m => m.WallModule)},
+            {path: 'category', loadChildren: () => import('app/modules/pages/category/category.module').then(m => m.CategoryModule)},
+            {path: 'computer-science', loadChildren: () => import('app/modules/pages/category/cs/cs.module').then(m => m.CsCategoryModule)},
+            {path: 'javascript', loadChildren: () => import('app/modules/pages/category/js/js.module').then(m => m.JsCategoryModule)},
         ]
     },
 
@@ -78,7 +82,7 @@ export const appRoutes: Route[] = [
             {path: 'about', loadChildren: () => import('app/modules/pages/about/about.module').then(m => m.AboutModule)},
             {path: 'contact', loadChildren: () => import('app/modules/pages/contact/contact.module').then(m => m.ContactModule)},
             {path: 'skills', loadChildren: () => import('app/modules/pages/skills/skills.module').then(m => m.SkillsModule)},
-            {path: 'wall', loadChildren: () => import('app/modules/pages/wall/wall.module').then(m => m.WallModule)},
+            // {path: 'wall', loadChildren: () => import('app/modules/pages/wall/wall.module').then(m => m.WallModule)},
             {path: 'work', loadChildren: () => import('app/modules/pages/work/work.module').then(m => m.WorkModule)},
         ]
     }

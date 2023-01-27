@@ -8,18 +8,18 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Route, RouterModule } from '@angular/router';
 import { MsrAlertModule } from '@msr/components/alert';
 import { MsrCardModule } from '@msr/components/card';
-import { WallComponent } from './wall.component';
+import { CsCategoryComponent } from './cs.component';
 
 const exampleRoutes: Route[] = [
     {
         path     : '',
-        component: WallComponent
+        component: CsCategoryComponent
     }
 ];
 
 @NgModule({
     declarations: [
-        WallComponent
+        CsCategoryComponent
     ],
     imports     : [
         RouterModule.forChild(exampleRoutes),
@@ -34,6 +34,6 @@ const exampleRoutes: Route[] = [
         MsrAlertModule,
     ]
 })
-export class WallModule
+export class CsCategoryModule
 {
 }

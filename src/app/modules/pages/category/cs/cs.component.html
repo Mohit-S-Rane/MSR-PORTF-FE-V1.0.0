@@ -1,8 +1,9 @@
 <div class="flex flex-col sm:flex sm:flex-row p-6 min-w-0">
-    <!-- <div class="flex-1 flex-row flex-wrap gap-x-6 gap-y-6 justify-center"> -->
-    <msr-card
-        class="w-72 flex flex-col p-7 sm:ml-4 mt-4 rounded-none filter-pricing sm:justify-start justify-center m-auto"
+    <div class="flex flex-row">
+        <msr-card class="relative w-7/12 flex flex-col p-7 ml-4 mt-4 rounded-none filter-pricing"
         style="background-color: #0f172a;">
+        <div><a href="/wall"> Back to Blog </a></div>
+
         <div class="text-5xl title-font leading-5">categories</div>
         <div class="flex flex-col mt-8">
             <a href="#">
@@ -17,7 +18,9 @@
                 <div class="text-xl text-secondary text-effect font-semibold inline">Web Development </div><span
                     class="text-xl text-secondary font-semibold">(8)</span>
             </a>
+
         </div>
+
         <div class="text-5xl mt-16 title-font leading-5">contact me</div>
 
         <form class="w-full mt-6 gap-y-2" action="#">
@@ -45,15 +48,13 @@
             <div class="font-tags text-lg">&lt;/form&gt;</div>
         </form>
     </msr-card>
-    <!-- </div> -->
-
     <div class="w-16 absolute top-0 left-0 bg-black p-2.5">
         <a href="/example">
             <img src="../../../../assets/images/logo/arrow-logo.png" alt="logo_img">
         </a>
     </div>
 
-    <div class="flex flex-row w-10/12 flex-wrap gap-x-6 gap-y-6 justify-center mt-6 m-auto">
+    <div class="flex flex-row flex-wrap gap-x-6 gap-y-6 justify-center mt-6">
         <msr-card class="flex-col w-full max-w-80 p-7 rounded-none filter-pricing border-t-4 border-sky-600">
             <div class="text-xl text-secondary uppercase text-sky-600"> SQL & DATABASES </div>
             <div class="text-3xl title-text mt-2">How to Create a Database Using the MongoDB Atlas UI</div>
@@ -155,6 +156,8 @@
             </div>
         </msr-card>
     </div>
+    </div>
+   
 
 
 
