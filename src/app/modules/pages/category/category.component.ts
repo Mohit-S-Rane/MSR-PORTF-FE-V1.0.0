@@ -2,7 +2,7 @@ import { Component, HostListener, OnInit, SimpleChanges, ViewEncapsulation } fro
 import * as $ from 'jquery';
 
 @Component({
-  selector: "about",
+  selector: "category",
   templateUrl: "./category.component.html",
   styleUrls: ["./category.component.scss"],
   encapsulation: ViewEncapsulation.None,

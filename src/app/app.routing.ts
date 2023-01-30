@@ -63,8 +63,20 @@ export const appRoutes: Route[] = [
             {path: 'home', loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)},
             {path: 'wall', loadChildren: () => import('app/modules/pages/wall/wall.module').then(m => m.WallModule)},
             {path: 'category', loadChildren: () => import('app/modules/pages/category/category.module').then(m => m.CategoryModule)},
+        ]
+    },
+
+    {
+        path: 'category',
+        component  : LayoutComponent,
+        data: {
+            layout: 'empty'
+        },
+        children   : [
             {path: 'computer-science', loadChildren: () => import('app/modules/pages/category/cs/cs.module').then(m => m.CsCategoryModule)},
             {path: 'javascript', loadChildren: () => import('app/modules/pages/category/js/js.module').then(m => m.JsCategoryModule)},
+            {path: 'htmlcss', loadChildren: () => import('app/modules/pages/category/htmlcss/htmlcss.module').then(m => m.HtmlCssCategoryModule)},
+            {path: 'other', loadChildren: () => import('app/modules/pages/category/htmlcss/htmlcss.module').then(m => m.HtmlCssCategoryModule)},
         ]
     },
 
