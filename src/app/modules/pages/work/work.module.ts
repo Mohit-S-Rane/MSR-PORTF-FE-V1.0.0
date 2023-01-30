@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 import { Route, RouterModule } from '@angular/router';
+import { MsrCardModule } from '@msr/components/card';
 import { WorkComponent } from './work.component';
 
 const exampleRoutes: Route[] = [
@@ -14,7 +16,9 @@ const exampleRoutes: Route[] = [
         WorkComponent
     ],
     imports     : [
-        RouterModule.forChild(exampleRoutes)
+        RouterModule.forChild(exampleRoutes),
+        MsrCardModule,
+        MatIconModule
     ]
 })
 export class WorkModule
