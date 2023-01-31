@@ -17,7 +17,7 @@ export const appRoutes: Route[] = [
     // After the user signs in, the sign in page will redirect the user to the 'signed-in-redirect'
     // path. Below is another redirection for that path to redirect the user to the desired
     // location. This is a small convenience to keep all main routes together here on this file.
-    // {path: 'signed-in-redirect', pathMatch : 'full', redirectTo: 'example'},
+    {path: 'signed-in-redirect', pathMatch : 'full', redirectTo: 'home'},
 
     // Auth routes for guests
     // {
@@ -60,7 +60,7 @@ export const appRoutes: Route[] = [
             layout: 'empty'
         },
         children   : [
-            {path: '_home', loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)},
+            {path: 'next', loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)},
             {path: 'wall', loadChildren: () => import('app/modules/pages/wall/wall.module').then(m => m.WallModule)},
             {path: 'category', loadChildren: () => import('app/modules/pages/category/category.module').then(m => m.CategoryModule)},
         ]
