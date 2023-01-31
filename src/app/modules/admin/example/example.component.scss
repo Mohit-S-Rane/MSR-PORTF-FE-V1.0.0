@@ -20,9 +20,7 @@
   color: #515152;
   position: absolute;
   bottom: 0;
-  //   left: 0rem;
   font-style: italic;
-  // font-size: 1.6rem;
   font-family: "La_Belle_Aurore", cursive;
 }
 
@@ -52,7 +50,6 @@
 .font-tags {
   color: #515152;
   font-style: italic;
-  // font-size: 1.6rem;
   font-family: "La_Belle_Aurore", cursive;
 }
 
@@ -64,132 +61,101 @@
   color: #8d8d8d;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-$openSans: 'Open Sans', Helvetica, Arial, sans-serif;
+$openSans: "Open Sans", Helvetica, Arial, sans-serif;
 body {
   background: #333;
   font-family: $openSans;
 }
 
 .buttons {
-  margin-top: 50px;
+  // margin-top: 50px;
   text-align: center;
-  border-radius:30px;
+  border-radius: 30px;
 }
 
-$cyan: #05fdd8;
-$dark: #FFFFFF;
-$borderW: 2px;
-
-.blob-btn {
-  $numOfBlobs: 4;
-  z-index: 1;
-  position: relative;
-  padding: 20px 46px;
-  margin-bottom: 30px;
+.button {
   text-align: center;
-  text-transform: uppercase;
-  color: $cyan;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  transition: color 0.5s;
-  cursor: pointer;
-  border-radius:30px;
-  
-  &:before {
-    content: "";
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: $borderW solid $cyan;
-    border-radius:30px;
-  }
-  
-  &:after {
-    content: "";
-    z-index: -2;
-    position: absolute;
-    left: $borderW*1.5;
-    top: $borderW*1.5;
-    width: 100%;
-    height: 100%;
+  text-decoration: none;
+  color: #08fdd8;
+  border: 1px solid #08fdd8;
+  font-size: 23px;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 6px -3px rgba(6, 4, 10, 0.5);
+}
 
-    transition: all 0.3s 0.2s;
-    border-radius:30px;
+.button::before {
+  content: "";
+  background: #fff;
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -97px;
+  transform: skewX(-45deg) translateX(0);
+  transition: none;
+}
+
+.button:hover {
+  background: #111;
+  color: #fff;
+}
+
+.button:hover::before {
+  transform: skewX(-45deg) translateX(15.5em);
+  transition: all 0.5s ease-in-out;
+}
+
+.box {
+  position: absolute;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  background: none;
+  animation: updown 1s ease 0.2s infinite;
+  z-index: 99;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0px);
   }
-  
-  &:hover {
-    color: $dark;
-    border-radius:30px;
-    
-    &:after {
-      transition: all 0.3s;
-      left: 0;
-      top: 0;
-      border-radius:30px;
-    }
+
+  50% {
+    transform: translateY(8px);
   }
-  
-  &__inner {
-    z-index: -1;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius:30px;
-    background:#ffffff;
+
+  100% {
+    transform: translateY(0px);
   }
-  
-  // additional container created, because in FF blobs are breaking overflow:hidden of element with svg gooey filter
-  &__blobs {
-    position: relative;
-    display: block;
-    height: 100%;
-    filter: url('#goo');
+}
+
+@keyframes shadow {
+  0% {
+    transform: scale(1);
+    opacity: 0.2;
   }
-  
-  &__blob {
-    position: absolute;
-    top: $borderW;
-    width: 100% / $numOfBlobs;
-    height: 100%;
-    background: $cyan;
-    border-radius: 100%;
-    transform: translate3d(0,150%,0) scale(1.7);
-    transition: transform 0.45s;
-    
-    @supports(filter: url('#goo')) {
-      transform: translate3d(0,150%,0) scale(1.4);
-    }
-    
-    @for $i from 1 through $numOfBlobs {
-      &:nth-child(#{$i}) {
-        left: ($i - 1) * (120% / $numOfBlobs);
-        transition-delay: ($i - 1) * 0.08s;
-      }
-    }
-    
-    .blob-btn:hover & {
-      transform: translateZ(0) scale(1.7);
-      
-      @supports(filter: url('#goo')) {
-        transform: translateZ(0) scale(1.4);
-      }
-    }
+
+  50% {
+    transform: scale(0.95);
+    opacity: 0.28;
   }
-  
+
+  100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
 }
 
 .hover-effect:hover {
@@ -209,7 +175,7 @@ $time-4: 200s;
 @function particles($max) {
   $val: 0px 0px $color-particle;
   @for $i from 1 through $max {
-    $val: #{$val}, random($spacing)+px random($spacing)+px $color-particle;
+    $val: #{$val}, random($spacing) + px random($spacing) + px $color-particle;
   }
   @return $val;
 }
@@ -225,7 +191,8 @@ body {
   align-items: center;
 }
 
-.page-bg, .animation-wrapper {
+.page-bg,
+.animation-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -242,7 +209,8 @@ body {
   z-index: -1;
 }
 
-.particle, .particle:after {
+.particle,
+.particle:after {
   background: transparent;
 }
 
@@ -322,7 +290,7 @@ h4 {
 }
 
 h4:hover {
-  color: #FF1177;
+  color: #ff1177;
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
@@ -332,24 +300,12 @@ h4:hover {
 
 @-webkit-keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 30px #fff,
-      0 0 40px #FF1177,
-      0 0 70px #FF1177,
-      0 0 80px #FF1177,
-      0 0 100px #FF1177,
-      0 0 150px #FF1177;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
   }
   to {
-    text-shadow: 0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #fff,
-      0 0 20px #FF1177,
-      0 0 35px #FF1177,
-      0 0 40px #FF1177,
-      0 0 50px #FF1177,
-      0 0 75px #FF1177;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
   }
 }
 
@@ -357,24 +313,12 @@ h4:hover {
 
 @-moz-keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 30px #fff,
-      0 0 40px #FF1177,
-      0 0 70px #FF1177,
-      0 0 80px #FF1177,
-      0 0 100px #FF1177,
-      0 0 150px #FF1177;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
   }
   to {
-    text-shadow: 0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #fff,
-      0 0 20px #FF1177,
-      0 0 35px #FF1177,
-      0 0 40px #FF1177,
-      0 0 50px #FF1177,
-      0 0 75px #FF1177;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
   }
 }
 
@@ -382,23 +326,11 @@ h4:hover {
 
 @keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 30px #fff,
-      0 0 40px #FF1177,
-      0 0 70px #FF1177,
-      0 0 80px #FF1177,
-      0 0 100px #FF1177,
-      0 0 150px #FF1177;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
   }
   to {
-    text-shadow: 0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #fff,
-      0 0 20px #FF1177,
-      0 0 35px #FF1177,
-      0 0 40px #FF1177,
-      0 0 50px #FF1177,
-      0 0 75px #FF1177;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
   }
 }

@@ -1,86 +1,51 @@
+<div class="page-bg"></div>
+<div class="animation-wrapper">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+</div>
 <div class="flex flex-col flex-auto min-w-0">
-
-    <!-- Main -->
     <div class="flex-auto p-6">
+        <div class="flex flex-col">
+            <div class="font-tags text-3xl">&lt;html&gt;</div>
+            <div class="font-tags text-3xl sm:ml-5">&lt;body&gt;</div>
+            <div class="font-tags text-3xl sm:ml-5">&lt;h1&gt;</div>
+            <h1 class="title-font ml-5 sm:ml-12 mt-20 md:mt-24 absolute text-8.5xl md:text-10xl md:mt-16 lg:text-10xl">
+                <span class="hover-effect inline">H</span>
+                <span class="hover-effect inline">i</span>
+                <span class="hover-effect inline">,</span>
+            </h1>
+            <div class="title-font ml-5 sm:ml-12 mt-40 md:mt-44 absolute text-8.5xl md:text-10xl md:mt-44 lg:text-10xl">
+                <span class="hover-effect inline">I</span>
+                <span class="hover-effect inline">'</span>
+                <span class="hover-effect inline">m</span>
+                <img class="w-16 md:w-24 md:mt-14 inline mt-8 ml-6" src="assets/images/logo/arrow-logo.png"
+                    alt="Logo image">
+                <span class="hover-effect inline">o</span>
+                <span class="hover-effect inline">h</span>
+                <span class="hover-effect inline">i</span>
+                <span class="hover-effect inline">t</span>
+            </div>
+            <div class="title-font ml-5 sm:ml-12 mt-64 md:mt-72 absolute text-8.5xl md:text-10xl md:mt-80 lg:text-10xl hover-effect"
+                style="line-height: 6rem;">
+                <ngtypewriter [StringList]='list' [speed]='1000'></ngtypewriter>
+                <div class="font-tags text-3xl inline">&lt;/h1&gt;</div>
+            </div>
+            <div class="font-tags text-3xl sm:ml-5 mt-80 md:mt-96">&lt;p&gt;</div>
+            <div class="grey-text ml-5 sm:ml-12">
+                Full Stack Developer | Solution Architech | Devops Engineer
+            </div>
+            <div class="font-tags text-3xl sm:ml-5">&lt;/p&gt;</div>
+            <div class="font-tags text-3xl sm:ml-5">&lt;button&gt;</div>
 
-        <!-- CONTENT GOES HERE -->
-        <div>
-            <!-- <div class="h-400 min-h-400 max-h-400 border-2 border-dashed border-gray-300 rounded-2xl"> -->
-
-            <div class="flex flex-col">
-                <!-- <span class="font-tags text-3xl">&lt;html&gt;</span> -->
-                <div class="font-tags text-3xl">&lt;html&gt;</div>
-                <div class="font-tags text-3xl sm:ml-5">&lt;body&gt;</div>
-                <div class="font-tags text-3xl sm:ml-5">&lt;h1&gt;</div>
-                <h1
-                    class="title-font ml-5 sm:ml-12 mt-20 md:mt-24 absolute text-8.5xl md:text-10xl md:mt-16 lg:text-10xl">
-                    <span class="hover-effect inline">H</span>
-                    <span class="hover-effect inline">i</span>
-                    <span class="hover-effect inline">,</span>
-                </h1>
-                <div
-                    class="title-font ml-5 sm:ml-12 mt-40 md:mt-44 absolute text-8.5xl md:text-10xl md:mt-44 lg:text-10xl">
-                    <span class="hover-effect inline">I</span>
-                    <span class="hover-effect inline">'</span>
-                    <span class="hover-effect inline">m</span>
-                    <img class="w-16 md:w-24 md:mt-14 inline mt-8 ml-6" src="assets/images/logo/arrow-logo.png"
-                        alt="Logo image">
-                    <span class="hover-effect inline">o</span>
-                    <span class="hover-effect inline">h</span>
-                    <span class="hover-effect inline">i</span>
-                    <span class="hover-effect inline">t</span>
-                </div>
-                <div class="title-font ml-5 sm:ml-12 mt-64 md:mt-72 absolute text-8.5xl md:text-10xl md:mt-80 lg:text-10xl hover-effect"
-                    style="line-height: 6rem;">
-                    <ngtypewriter [StringList]='list' [speed]='1000'></ngtypewriter>
-                    <div class="font-tags text-3xl inline">&lt;/h1&gt;</div>
-                </div>
-                <div class="font-tags text-3xl sm:ml-5 mt-80 md:mt-96">&lt;p&gt;</div>
-                <div class="grey-text ml-5 sm:ml-12">
-                    Full Stack Developer | Solution Architech | Devops Engineer
-                </div>
-                <div class="font-tags text-3xl sm:ml-5">&lt;/p&gt;</div>
-
-                <!-- <div class="font-tags text-3xl ml-5">&lt;button&gt;</div> -->
-                <div class="buttons text-left ml-5 sm:ml-10">
-                    <button class="blob-btn">
-                        Contact Me!
-                        <span class="blob-btn__inner" style="background-color: #fd2155;">
-                            <span class="blob-btn__blobs">
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                            </span>
-                        </span>
-                    </button>
-                    <br />
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                        <defs>
-                            <filter id="goo">
-                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                <feColorMatrix in="blur" mode="matrix"
-                                    values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                            </filter>
-                        </defs>
-                    </svg>
-                </div>
-                <!-- <div class="font-tags text-3xl ml-5">&lt;/button&gt;</div> -->
-
-                <div class="font-tags text-3xl sm:ml-5">&lt;/body&gt;</div>
-                <div class="font-tags text-3xl">&lt;/html&gt;</div>
+            <div class="buttons text-left ml-5 sm:ml-10">
+                <a href="/contact" class="button text-right p-2 md:px-4 md:py-2">Contact Me!</a>
             </div>
 
+            <div class="font-tags text-3xl sm:ml-5">&lt;/button&gt;</div>
+            <div class="font-tags text-3xl sm:ml-5">&lt;/body&gt;</div>
+            <div class="font-tags text-3xl">&lt;/html&gt;</div>
         </div>
 
-    </div>
-
-
-    <div class="page-bg"></div>
-    <div class="animation-wrapper">
-        <div class="particle particle-1"></div>
-        <div class="particle particle-2"></div>
-        <div class="particle particle-3"></div>
-        <div class="particle particle-4"></div>
     </div>
